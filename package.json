@@ -1,0 +1,19 @@
+{
+  "name": "lux",
+  "version": "0.0.1",
+  "description": "The React application for the League of Legends tournament app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/League-tournament-app/lux.git"
+  },
+  "author": "Dan Pantry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/League-tournament-app/lux/issues"
+  },
+  "homepage": "https://github.com/League-tournament-app/lux#readme"
+}
