@@ -1,4 +1,17 @@
 'use strict';
+const GitSHAPlugin = require('git-sha-webpack-plugin');
+
+// The hash is generated from the git SHA hash.
+// This means that it won't work very well on the dev server as
+// we would have to change the index template with each change.
+// the hash however is useful for long-term storage of files as well
+// as cache-busting in IE.
+let outputFilenamePattern = '[name].js';
+let plugins = [];
+if(process.env.NODE_ENV === 'production') {
+  outputFilenamePattern = '[name].[chunkgitsha].js';
+  plugins.push(new GitSHAPlugin({ length: 7 }));
+}
 
 module.exports = {
   entry: {
@@ -6,8 +19,9 @@ module.exports = {
   },
   output: {
     path: "./dist", 
-    filename: "[name].[hash].js"
+    filename: outputFilenamePattern
   },
+  plugins: plugins,
   resolve: {
     extensions: ["", ".js", ".jsx"], 
   },
