@@ -75,4 +75,6 @@ $RECYCLE.BIN/
 *.lnk
 
 
-dist/
+# Nightwatch
+screenshots/
+tests_output/

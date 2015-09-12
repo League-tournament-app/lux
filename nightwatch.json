@@ -1,0 +1,21 @@
+{
+  "src_folders": ["./nightwatch/tests"],
+  "test_settings": {
+    "default": {
+      "launch_url": "http://localhost:8080",
+      "selenium_port": 4444,
+      "selenium_host": "localhost",
+      "silent": true,
+      "screenshots": {
+        "enabled": true,
+        "on_failure": true,
+        "on_error": true,
+        "path": "./screenshots/"
+      },
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true
+      }
+    }
+  }
+}
