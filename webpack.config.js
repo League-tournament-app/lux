@@ -29,5 +29,10 @@ module.exports = {
     loaders: [
       { test: /\.jsx$/, include: /app/, loaders: ['babel'] }
     ]
+  },
+  devServer: {
+    port: 8080,
+    contentBase: './public',
+    historyApiFallback: true
   }
 };
