@@ -8,6 +8,7 @@
     "build": "webpack -p",
     "test": "mocha --require babel/register app/**/*.spec.jsx --recursive",
     "e2e": "nightwatch",
+    "clean": "rimraf app/**/*.js",
     "prepublish": "babel app --out-dir app"
   },
   "repository": {
