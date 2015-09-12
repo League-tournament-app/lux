@@ -1,6 +1,6 @@
 {
   "name": "lux",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "The React application for the League of Legends tournament app.",
   "main": "index.jsx",
   "scripts": {
