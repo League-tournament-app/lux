@@ -74,6 +74,8 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Build Artifacts
+dist/
 
 # Nightwatch
 screenshots/
