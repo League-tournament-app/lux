@@ -2,12 +2,13 @@
   "name": "lux",
   "version": "0.0.4",
   "description": "The React application for the League of Legends tournament app.",
-  "main": "index.jsx",
+  "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack -p",
     "test": "mocha --require babel/register app/**/*.spec.jsx --recursive",
-    "e2e": "nightwatch"
+    "e2e": "nightwatch",
+    "prepublish": "babel app --out-dir app"
   },
   "repository": {
     "type": "git",

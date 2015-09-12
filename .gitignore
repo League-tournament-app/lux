@@ -80,3 +80,5 @@ dist/
 # Nightwatch
 screenshots/
 tests_output/
+
+app/*.js
