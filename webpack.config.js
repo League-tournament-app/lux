@@ -1,4 +1,5 @@
 'use strict';
+const webpack = require('webpack');
 const GitSHAPlugin = require('git-sha-webpack-plugin');
 
 // The hash is generated from the git SHA hash.
@@ -7,7 +8,10 @@ const GitSHAPlugin = require('git-sha-webpack-plugin');
 // the hash however is useful for long-term storage of files as well
 // as cache-busting in IE.
 let outputFilenamePattern = '[name].js';
-let plugins = [];
+let plugins = [
+  new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.js');
+];
+
 if(process.env.NODE_ENV === 'production') {
   outputFilenamePattern = '[name].[chunkgitsha].js';
   plugins.push(new GitSHAPlugin({ length: 7 }));
@@ -15,7 +19,8 @@ if(process.env.NODE_ENV === 'production') {
 
 module.exports = {
   entry: {
-    main: "./app/index.jsx", 
+    main: "./app/index.jsx",
+    vendor: ['react', 'react-router']
   },
   output: {
     path: "./dist", 
