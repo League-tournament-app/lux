@@ -9,7 +9,7 @@ const GitSHAPlugin = require('git-sha-webpack-plugin');
 // as cache-busting in IE.
 let outputFilenamePattern = '[name].js';
 let plugins = [
-  new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.js');
+  new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.js')
 ];
 
 if(process.env.NODE_ENV === 'production') {
