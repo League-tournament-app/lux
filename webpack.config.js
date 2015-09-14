@@ -20,7 +20,7 @@ if(process.env.NODE_ENV === 'production') {
 module.exports = {
   entry: {
     main: "./src/index.jsx",
-    vendor: ['react', 'react-router']
+    vendor: ['react', 'react-router', 'react-dom']
   },
   output: {
     path: "./dist", 

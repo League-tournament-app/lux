@@ -23,6 +23,7 @@
   "homepage": "https://github.com/League-tournament-app/lux#readme",
   "dependencies": {
     "react": "^0.14.0-rc1",
+    "react-dom": "^0.14.0-rc1",
     "react-router": "1.0.0-rc1"
   },
   "devDependencies": {
