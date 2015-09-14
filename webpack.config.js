@@ -19,7 +19,7 @@ if(process.env.NODE_ENV === 'production') {
 
 module.exports = {
   entry: {
-    main: "./app/index.jsx",
+    main: "./src/index.jsx",
     vendor: ['react', 'react-router']
   },
   output: {
@@ -32,7 +32,7 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.jsx$/, include: /app/, loaders: ['babel'] }
+      { test: /\.jsx$/, include: /src/, loaders: ['babel'] }
     ]
   },
   devServer: {

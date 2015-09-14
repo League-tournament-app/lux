@@ -81,4 +81,4 @@ dist/
 screenshots/
 tests_output/
 
-app/*.js
+lib/

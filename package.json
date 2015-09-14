@@ -9,7 +9,7 @@
     "test": "mocha --require babel/register app/**/*.spec.jsx --recursive",
     "e2e": "nightwatch",
     "clean": "rimraf app/**/*.js",
-    "prepublish": "babel app --out-dir app"
+    "prepublish": "babel --optional es7.decorators src/ --out-dir lib/"
   },
   "repository": {
     "type": "git",
