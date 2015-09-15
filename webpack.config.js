@@ -1,6 +1,7 @@
 'use strict';
 const webpack = require('webpack');
 const GitSHAPlugin = require('git-sha-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 // The hash is generated from the git SHA hash.
 // This means that it won't work very well on the dev server as
@@ -12,9 +13,12 @@ let plugins = [
   new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.js')
 ];
 
+const cssLoader = { test: /\.scss$/, include: /src/, loader: 'style!css!autoprefixer!sass' };
 if(process.env.NODE_ENV === 'production') {
   outputFilenamePattern = '[name].[chunkgitsha].js';
+  cssLoader.loader = ExtractTextPlugin.extract('style', 'css!autoprefixer!sass');
   plugins.push(new GitSHAPlugin({ length: 7 }));
+  plugins.push(new ExtractTextPlugin('styles.css'));
 }
 
 module.exports = {
@@ -33,7 +37,7 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.jsx$/, include: /src/, loaders: ['babel'] },
-      { test: /\.scss$/, include: /src/, loaders: ['style', 'css', 'autoprefixer', 'sass'] }
+      { test: /\.scss$/, include: /src/, loader: cssLoader }
     ]
   },
   devServer: {
