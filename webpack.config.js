@@ -32,7 +32,8 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.jsx$/, include: /src/, loaders: ['babel'] }
+      { test: /\.jsx$/, include: /src/, loaders: ['babel'] },
+      { test: /\.scss$/, include: /src/, loaders: ['style', 'css', 'autoprefixer', 'sass'] }
     ]
   },
   devServer: {
