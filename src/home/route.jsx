@@ -3,7 +3,9 @@ import React from 'react';
 
 class HomeRoute extends React.Component {
   render() {
-    return <div />;
+    return <section>
+      <h1>TournamentsGG</h1>
+    </section>;
   }
 }
 
