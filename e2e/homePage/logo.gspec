@@ -1,0 +1,7 @@
+@objects
+  logo css h1:first-of-type
+
+= Main =
+  @on *
+    logo:
+      text is "TournamentsGG"

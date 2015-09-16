@@ -1,0 +1,9 @@
+@@ import ../base.test
+
+@@ parameterized using devices
+@@ parameterized using browsers
+Home page on ${deviceName} device
+  selenium grid ${seleniumGridUrl} --page ${websiteUrl} --browser ${browser} --size ${size}
+    # I don't understand why "check" does not use relative paths, but
+    # import does.
+    check ./e2e/homePage/logo.gspec --include "${tags}"

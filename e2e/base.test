@@ -1,0 +1,7 @@
+@@ table devices
+  | deviceName            | tags    | size      |
+  | 1080p Desktop Monitor | desktop | 1920x1080 |
+  
+@@ table browsers
+  | browser |
+  | chrome  |
