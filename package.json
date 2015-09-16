@@ -1,6 +1,6 @@
 {
   "name": "@danpantry/lux",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "The React application for the League of Legends tournament app.",
   "main": "index.js",
   "scripts": {
