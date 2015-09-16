@@ -6,9 +6,9 @@
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack -p",
-    "test": "mocha --require babel/register app/**/*.spec.jsx --recursive",
+    "test": "mocha --require babel/register src/**/*.spec.jsx --recursive",
     "e2e": "nightwatch",
-    "clean": "rimraf app/**/*.js",
+    "clean": "rimraf lib/**/*.js",
     "prepublish": "babel --optional es7.decorators src/ --out-dir lib/"
   },
   "repository": {
