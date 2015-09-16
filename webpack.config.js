@@ -36,7 +36,8 @@ module.exports = {
     ]
   },
   devServer: {
-    port: 8080,
+    host: process.env.IP || 'localhost',
+    port: process.env.PORT || 8080,
     contentBase: './public',
     historyApiFallback: true
   }
