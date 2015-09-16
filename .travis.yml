@@ -1,0 +1,7 @@
+language: node_js
+node_js:
+  - '4.0'
+before_install:
+  - sudo apt-get update -qq
+  - sudo apt-get install default-jre -qq
+script: npm test && npm run test
