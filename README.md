@@ -1,7 +1,7 @@
 ### End to End Tests
-We use Saucelabs to run end-to-end tests with Nightwatch, by default. For now,
+We use Saucelabs to run end-to-end tests with Galen, by default. For now,
 if you wish to run end-to-end tests you will need to change the `selenium_host` 
-and `selenium_port` settings in `./nightwatch.json`.
+and `selenium_port` settings in `./config`.
 
 If you have an access key and username combo for our SauceLabs account (
 contributors should get these), then you should instead set the following
