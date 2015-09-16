@@ -81,5 +81,7 @@ dist/
 screenshots/
 tests_output/
 
-lib/
 .vagrant
+
+lib/
+*.zip
