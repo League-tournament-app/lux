@@ -6,7 +6,7 @@
       "selenium_port": 80,
       "username": "${SAUCELABS_USERNAME}",
       "access_key": "${SAUCELABS_ACCESS_KEY}",
-      "launch_url": "http://localhost:8080",
+      "launch_url": "http://${IP}:${PORT}",
       "silent": true,
       "desiredCapabilities": {
         "name": "tournamentsgg-chrome",
