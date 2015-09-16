@@ -17,3 +17,11 @@ which is just a simple piece of software that proxies all connects to SauceLabs.
 There are known issues with `localhost` web servers, Sauce Connect and the browsers
 Safari and IE.See [this article](https://support.saucelabs.com/customer/portal/articles/2005369-testing-with-a-localhost-server-and-some-browsers-can-t-load-my-website) 
 for workarounds.
+
+You will also need to set the following environment variables:
+
+- `IP` for the host of the web server
+- `PORT` for the port of the web server
+
+This is primarily due to the support for the Cloud9 IDE which uses both of these
+ports.
