@@ -24,4 +24,4 @@ You will also need to set the following environment variables:
 - `PORT` for the port of the web server
 
 This is primarily due to the support for the Cloud9 IDE which uses both of these
-ports.
+environment variables.
