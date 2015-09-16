@@ -77,11 +77,9 @@ $RECYCLE.BIN/
 # Build Artifacts
 dist/
 
-# Nightwatch
-screenshots/
-tests_output/
-
 .vagrant
-
 lib/
+
+#Galen
 *.zip
+reports/
