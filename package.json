@@ -7,7 +7,7 @@
     "start": "webpack-dev-server",
     "build": "webpack -p",
     "test": "mocha --require babel/register src/**/*.spec.jsx --recursive",
-    "e2e": "galen test ./e2e --htmlreport reports -DwebsiteUrl=${IP}:${PORT} -DseleniumGridUrl=http://${SAUCELABS_USERNAME}:${SAUCELABS_ACCESS_KEY}@ondemand.saucelabs.com:80/wd/hub",
+    "e2e": "galen test ./e2e --recursive --htmlreport reports -DwebsiteUrl=http://${IP}:${PORT} -DseleniumGridUrl=http://${SAUCELABS_USERNAME}:${SAUCELABS_ACCESS_KEY}@ondemand.saucelabs.com:80/wd/hub",
     "clean": "rimraf lib/**/*.js",
     "prepublish": "babel --optional es7.decorators src/ --out-dir lib/"
   },
